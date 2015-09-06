@@ -1,0 +1,59 @@
+
+/* -----------------------------------
+Initial pseudo-element
+----------------------------------- */
+
+body:before {
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.25);
+	font-size: 100%;
+	padding: 0.25em;
+	z-index: 99999;
+}
+
+/* -----------------------------------
+Pseudo-elements in media queries
+----------------------------------- */
+
+/* Small devices */
+@media (max-width:40em)
+{
+	body:before {
+		content: "Small";
+	}
+}
+
+/* Medium devices */
+@media (min-width:40.063em) and (max-width:64em) 
+{
+	body:before {
+		content: "Medium";
+	}
+}
+
+/* Large devices */
+@media (min-width:64.063em) and (max-width:90em)
+{
+	body:before {
+		content: "Large";
+	}
+}
+
+/* XLarge devices */
+@media (min-width:90.063em) and (max-width:120em)
+{
+	body:before {
+		content: "XLarge";
+	}
+}
+
+/* XXLarge devices */
+@media (min-width:120.063em)
+{
+	body:before {
+		content: "XXLarge";
+	}
+}
